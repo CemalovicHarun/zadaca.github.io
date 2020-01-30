@@ -1,0 +1,223 @@
+Web stranica je radjena u Visual Studio Code alatu.
+Za ovu varijantu postoji free verzija za koristenje.
+
+Pocetni koraci:
+1. Kreiranje HTML fajla
+2.Upisivanje koda
+
+
+
+
+
+
+<!DOCTYPE html>   MORA SE PISATI NA SVAKOM POCETKU FAJLA!
+<html>		  I OVO .... 
+
+<title>Page</title>  ----> TITL
+
+
+__________________ LINKOVI KORISTENI U KREIRANJU STRANICE_____________VEZE 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>  										----> UMJESTO CSS-A KORISTIMO STIL DIREKTNO U HTML-U ( CASCADING STYLE SHEETS) 
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+</style> 															----> ZATVARANE STYLE DIJELA 
+
+<body class="w3-light-grey">
+
+<!-- Stranica -->
+<div style="max-width:1400px;">
+
+  <!-- Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Lijeva kolona -->
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">---------------
+        <div class="w3-display-container">
+          <img src="profil.jpg" style="width:100%" alt="Avatar">									---------->SLIKA 
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h2>Hana Spahic</h2>
+          </div>
+        </div>-----------------------------------------------------
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Bachelor of graphic design and multimedia</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Sarajevo, BIH</p>					---------> OPIS ISPOD SLIKE 
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>hana.spahiic@gmail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>061/677-128</p>
+          <hr>
+
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+          <p>Adobe Photoshop</p>													---------> LOADING BAR 
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">100%</div>
+          </div>
+          <p>Photography</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">										---------> LOADING BAR 
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:98%">
+              <div class="w3-center w3-text-white">98%</div>
+            </div>
+          </div>
+          <p>Illustrator</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">										---------> LOADING BAR 
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:95%">95%</div>
+          </div>
+          <p>Media</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">										---------> LOADING BAR 
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+          </div>
+          <br>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">											---------> LOADING BAR 
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+          </div>
+        </br>
+        </div>
+      </div><br>
+
+    <!-- Zadnja lijeva kolona -->
+    </div>
+
+    <!-- Desna kolona -->														---------> SADRZANI TEKEST OD OVOG DIJELA KODA ....
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Sarajevo Unlimited</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2019 <span class="w3-tag w3-teal w3-round">Current</span></h6>
+          <p>Sarajevo unlimited is the first regional(region of SEE)forum on innovation,enterprenueurship and technology,and stems as a result of yearly activitier of Entrepreneural,innovation and educational center-Networks in Sarajevo.</p></br>
+            <p>In order to build a platform that will showcase and emphasise these stories,individuals and change makers,build also link to link them to investors,markets and relavant institutions - we have created Sarajevo Unlimited.
+          </p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Schuler Helfen Leben BIH </b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> Jun 2016</h6>
+          <p>The Schuler Helfen Leben Youth Foundation is focused on creating the conditions for youth advancement in Bosnia and Herzegovina, through developing youth capacities to become socially engaged and actively involved in decision-making in their communities.  </p>
+          <hr>
+        </div>
+        
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>MSŠ "Bosanski Petrovac" - Gimnazija</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Finished</h6>
+          <p>Srednja škola u Bosanskom Petrovcu djeluje od školske 1960/61. godine kada su upisani prvi učenici gimnazije. Od školske 1970/71. godine spajanjem više struka i zanimanja i objedinivši gimnaziju i ŠUP prerasta u Srednjoškolski centar ”Radivoj Rodić”.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>International Burch University</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018 - Now</h6>
+          <p>
+            The International Burch University (IBU) was founded in 2008 in Sarajevo, the capital of Bosnia and Herzegovina, with the aim of presenting a unique opportunity to re-examine the idea of ​​a modern university and refine new plans for the future. 
+            Following the decision of the Ministry of Education, Science and Youth of Sarajevo Canton, the teaching process was started according to the Bologna system of education (3 + 2 + 3) at three faculties, and the teaching was conducted in English.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>StartUp certificate</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017 - 2018</h6>
+          <p>Business contest while I was in high school.</p><br>
+        </div>
+      </div>																--------> .... DO OVOG DIJELA KODA
+
+    <!-- Zadnja desna kolona -->
+    </div>
+    
+  <!-- Kraj Grida -->
+  </div></br>
+  
+  <!-- Kraj stranice -->
+  
+
+<div class="row">
+  <div class="column">
+    <img src="slika1.jpg"  style="width:100%">
+  </div>
+  <div class="column">
+    <img src="slika2.jpg"  style="width:100%">				SLIKE U JEDNOM REDU 
+  </div>
+  <div class="column">
+    <img src="slika3.jpg"  style="width:100%">
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="slika4.jpg"  style="width:100%">
+  </div>
+  <div class="column">
+    <img src="slika5.jpg"  style="width:100%">				SLIKE U DRUGOM REDU 
+  </div>
+  <div class="column">
+    <img src="slika6.jpg"  style="width:100%">
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="slika7.jpg"  style="width:100%">
+  </div>
+  <div class="column">
+    <img src="slika8.jpg"  style="width:100%">    			SLIKE U TRECEM REDU
+  </div>
+  <div class="column">
+    <img src="slika9.jpg"  style="width:100%">
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="slika10.jpg"  style="width:100%">
+  </div>
+  <div class="column">
+    <img src="slika11.jpg"  style="width:100%">				SLIKE U CETVRTOM REDU 
+  </div>
+  <div class="column">
+    <img src="slika12.jpg"  style="width:100%">
+  </div>
+</div>
+
+ 
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  
+<p>Find me on social media.</p>
+  
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>			
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>			DNO STRANICEEEEEEEEEEEEEEEEEE
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+
+</footer>
+
+</body>
+</html>
